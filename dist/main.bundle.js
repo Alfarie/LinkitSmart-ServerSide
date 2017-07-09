@@ -808,7 +808,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var Config = (function () {
     function Config() {
-        this.url = "http://localhost:3001";
+        this.url = window.location.protocol + "//" + window.location.hostname + ":" + 3001;
         this.uid = undefined;
     }
     return Config;
