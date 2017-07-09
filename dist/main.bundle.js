@@ -1196,7 +1196,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var ConfigService = (function () {
     function ConfigService() {
-        this.hostname = window.location.protocol + "//" + "localhost" + ":" + 3001;
+        this.hostname = window.location.protocol + "//" + window.location.hostname + ":" + 3001;
         // public hostname = window.location.protocol + "//" + "192.168.100.1" + ":" + 3000;
     }
     return ConfigService;
