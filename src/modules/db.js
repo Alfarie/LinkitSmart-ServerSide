@@ -11,7 +11,7 @@ client.connect(url, function(err, db) {
 
 module.exports.Update = function(data_condition, set, col) {
     client.connect(url, function(err, db) {
-        db.collection(col).updateOne(data_condition, { $set: set }, function(err, res) {
+        db.collection(col).updateMany(data_condition, { $set: set }, function(err, res) {
             console.log(err)
         });
     });
